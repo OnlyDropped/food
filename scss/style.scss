@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import "fonts";
+@import "vars";
+@import "reset";
+@import "global";
+.header {
+  background: #fffbf3;
+  height: 100vh;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+.header-top {
+  &__inner {
+    padding: 29px 0 65px;
+  }
+  &__inner,
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item + .header-top__item {
+    margin-left: 85px;
+  }
+  &__link {
+    @extend %Segoe-700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #3c3c3c;
+    padding-bottom: 5px;
+    transition: all 0.6s ease-in;
+    &:hover {
+      color: #fcc647;
+      border-bottom: 3px solid #fcc647;
+    }
+  }
+  &__link--active {
+    color: #fcc647;
+    border-bottom: 3px solid #fcc647;
+  }
+  &__menu {
+    display: none;
+  }
+}
+.header-body {
+  &__inner {
+    max-width: 578px;
+    width: 100%;
+    padding-left: 4px;
+    padding-top: 65px;
+  }
+  &__btn {
+    padding: 12px 22px;
+    background: #fff2d5;
+    border-radius: 7.125px;
+    @extend %Inter-600;
+    font-size: 16.625px;
+    line-height: 14px;
+    color: #f4b41b;
+  }
+  &__title {
+    @extend %Segoe-700;
+    font-size: 48px;
+    line-height: 64px;
+    color: #3c3c3c;
+    margin: 13px 0 35px;
+    span {
+      color: #ffc12f;
+    }
+  }
+  &__text {
+    max-width: 507px;
+    width: 100%;
+    @extend %Inter-400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #667085;
+    margin-bottom: 66px;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__started,
+  &__more {
+    @extend %Inter-500;
+  }
+  &__started {
+    font-size: 19px;
+    line-height: 23px;
+    color: #fff;
+    padding: 15px 20px;
+    background: #ffc12f;
+    box-shadow: 0px 15px 40px rgba(249, 213, 128, 0.25);
+    border-radius: 48px;
+    margin-right: 26px;
+  }
+  &__more {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    line-height: 32px;
+    color: #3c3c3c;
+  }
+  &__circle {
+    display: grid;
+    place-items: center;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(199, 199, 199, 0.25);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 14px;
+  }
+}
+@import "media";

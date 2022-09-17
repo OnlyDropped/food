@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: 'Segoe-UI';
+  font-weight: 700;
+  font-style: normal;
+  src: local("Segoe-UI"), url("../fonts/Segoe-UI.woff2") format("woff2"), url("../fonts/Segoe-UI.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SegoeUI-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: local("SegoeUI-SemiBold"), url("../fonts/SegoeUI-SemiBold.woff2") format("woff2"), url("../fonts/SegoeUI-SemiBold.woff") format("woff");
+  font-display: swap;
+}
+
+.header-top__link, .header-body__title {
+  font-family: "Segoe-UI", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.header-body__text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header-body__started, .header-body__more {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.header-body__btn {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
+html {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1206px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
+.header {
+  background: #fffbf3;
+  height: 100vh;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+
+.header-top__inner {
+  padding: 29px 0 65px;
+}
+
+.header-top__inner, .header-top__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-top__item + .header-top__item {
+  margin-left: 85px;
+}
+
+.header-top__link {
+  font-size: 20px;
+  line-height: 26px;
+  color: #3c3c3c;
+  padding-bottom: 5px;
+  -webkit-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
+}
+
+.header-top__link:hover {
+  color: #fcc647;
+  border-bottom: 3px solid #fcc647;
+}
+
+.header-top__link--active {
+  color: #fcc647;
+  border-bottom: 3px solid #fcc647;
+}
+
+.header-top__menu {
+  display: none;
+}
+
+.header-body__inner {
+  max-width: 578px;
+  width: 100%;
+  padding-left: 4px;
+  padding-top: 65px;
+}
+
+.header-body__btn {
+  padding: 12px 22px;
+  background: #fff2d5;
+  border-radius: 7.125px;
+  font-size: 16.625px;
+  line-height: 14px;
+  color: #f4b41b;
+}
+
+.header-body__title {
+  font-size: 48px;
+  line-height: 64px;
+  color: #3c3c3c;
+  margin: 13px 0 35px;
+}
+
+.header-body__title span {
+  color: #ffc12f;
+}
+
+.header-body__text {
+  max-width: 507px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 32px;
+  color: #667085;
+  margin-bottom: 66px;
+}
+
+.header-body__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-body__started {
+  font-size: 19px;
+  line-height: 23px;
+  color: #fff;
+  padding: 15px 20px;
+  background: #ffc12f;
+  -webkit-box-shadow: 0px 15px 40px rgba(249, 213, 128, 0.25);
+          box-shadow: 0px 15px 40px rgba(249, 213, 128, 0.25);
+  border-radius: 48px;
+  margin-right: 26px;
+}
+
+.header-body__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
+  line-height: 32px;
+  color: #3c3c3c;
+}
+
+.header-body__circle {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 20px rgba(199, 199, 199, 0.25);
+          box-shadow: 0px 0px 20px rgba(199, 199, 199, 0.25);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+/*# sourceMappingURL=style.css.map */

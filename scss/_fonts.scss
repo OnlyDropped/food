@@ -1,0 +1,19 @@
+@font-face{
+  font-family: 'Segoe-UI';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Segoe-UI'),
+       url('../fonts/Segoe-UI.woff2') format("woff2"),
+       url('../fonts/Segoe-UI.woff') format("woff");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'SegoeUI-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: local('SegoeUI-SemiBold'),
+       url('../fonts/SegoeUI-SemiBold.woff2') format("woff2"),
+       url('../fonts/SegoeUI-SemiBold.woff') format("woff");
+  font-display: swap;
+}
