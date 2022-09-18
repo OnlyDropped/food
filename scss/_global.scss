@@ -9,10 +9,19 @@ html {
   padding: 0 15px;
 }
 
-button{
+button {
   cursor: pointer;
   border: none;
   background: transparent;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
+}
+
+.title {
+  @extend %Segoe-700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #3c3c3c;
+  margin-bottom: 30px;
+  text-align: center;
 }

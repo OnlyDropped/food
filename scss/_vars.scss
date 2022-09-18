@@ -11,19 +11,25 @@
 }
 
 %Inter-400 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
 %Inter-500 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
 }
 
 %Inter-600 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
+}
+
+%display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
