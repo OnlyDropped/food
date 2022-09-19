@@ -1,0 +1,76 @@
+@media (max-width: 1024px) {
+  .header {
+    background-position-y: bottom;
+  }
+  .header-body {
+    &__inner {
+      max-width: 535px;
+      padding-top: 0;
+    }
+    &__text {
+      max-width: 485px;
+      margin-bottom: 45px;
+    }
+  }
+  .how-work {
+    &__inner {
+      padding: 60px 0 30px;
+    }
+    .title {
+      margin-bottom: 15px;
+    }
+    &__text {
+      margin: 0 auto 35px;
+    }
+    &__item--middle {
+      transform: translateY(30px);
+    }
+    &__item--middle:before {
+      left: -110px;
+    }
+    &__item--middle:after {
+      right: -110px;
+    }
+  }
+  .delicious {
+    &__inner {
+      padding: 40px 0 50px;
+    }
+    &__content {
+      display: grid;
+      justify-items: center;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 30px;
+    }
+    &__card {
+      max-width: 295px;
+    }
+    &__text {
+      margin: 0 auto 45px;
+    }
+  }
+  .delivery {
+    &__info {
+      max-width: 450px;
+      padding: 80px 0px;
+    }
+    &__text + .delivery__text {
+      margin-top: 25px;
+    }
+  }
+  .download {
+    &__inner {
+      padding: 85px 0;
+    }
+  }
+  .contact {
+    &__inner {
+      padding: 30px 55px;
+    }
+  }
+  .footer-top {
+    &__inner {
+      padding: 165px 0 65px;
+    }
+  }
+}
